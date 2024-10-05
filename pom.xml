@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>parent</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.2-SNAPSHOT</version>
+	 <packaging>pom</packaging>
+
+    <modules>
+		<module> week11/problem1-week11-Buse-Dragomir-Alexandru </module>
+		<module> week11/problem2-week11-Buse-Dragomir-Alexandru </module>
+		<module> week11/problem3-week11-Buse-Dragomir-Alexandru </module>
+		
+		<module> week12/problem1-week12-Buse-Dragomir-Alexandru </module>
+		<module> week12/problem2-week12-Buse-Dragomir-Alexandru </module>
+		<module> week12/problem3-week12-Buse-Dragomir-Alexandru </module>
+		
+		<module> week13/problem1-week13-Buse-Dragomir-Alexandru </module>
+		
+		<module> week14/problem1-week14-Buse-Dragomir-Alexandru </module>
+		<module> week14/problem2-week14-Buse-Dragomir-Alexandru </module>
+		<module> week14/problem3-week14-Buse-Dragomir-Alexandru </module>
+		<module> week14/problem4-week14-Buse-Dragomir-Alexandru </module>
+		
+		<module> week16/problem1-week16-Buse-Dragomir-Alexandru </module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+			
+			<dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>1.3</version>
+                <scope>test</scope>
+         </dependency>
+            
+			<dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-library</artifactId>
+                <version>1.3</version>
+                <scope>test</scope>
+         </dependency>
+            
+			<dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+         </dependency>
+            
+			<dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>RELEASE</version>
+                <scope>test</scope>
+         </dependency>
+			
+			<dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+			</dependency>
+			
+			<dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+			
+        </dependencies>
+    </dependencyManagement>
+
+</project>
